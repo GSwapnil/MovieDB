@@ -72,7 +72,7 @@ public class ActorManager {
 				actor.setFirstName(resultSet.getString("firstName"));
 				actor.setLastName(resultSet.getString("lastName"));
 				actor.setDateOfBirth(resultSet.getDate("dateOfBirth"));
-//				actor.setCasts(CastManager.readAllCastForActor(actor.getId()));
+				actor.setCasts(CastManager.readAllCastForActor(actor.getId()));
 				actors.add(actor);
 			}
 		} catch (SQLException e) {

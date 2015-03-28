@@ -9,7 +9,7 @@ public class MySqlDataSourceFactory {
 	public static DataSource getMySqlDataSource()
 	{
 		MysqlDataSource dataSource = new MysqlDataSource();
-		dataSource.setUrl("jdbc:mysql://localhost:3306/MovieDB");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/moviedb");
 		dataSource.setUser("root");
 		dataSource.setPassword("root");
 		return dataSource;

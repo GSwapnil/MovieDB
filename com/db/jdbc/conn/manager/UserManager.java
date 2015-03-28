@@ -76,8 +76,8 @@ public class UserManager {
 				user.setLastName(resultSet.getString("lastName"));
 				user.setEmail(resultSet.getString("email"));
 				user.setDateOfBirth(resultSet.getDate("dateOfBirth"));
-//				user.setComments(CommentManager.readAllCommentsForUsername(user
-//						.getUsername()));
+				user.setComments(CommentManager.readAllCommentsForUsername(user
+						.getUsername()));
 				users.add(user);
 			}
 		} catch (SQLException e) {
